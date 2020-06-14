@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+        <title>"PREP-CALCULADORA"</title>
+		<meta charset="utf-8"/>
+		<style>
+		    label{
+			     display: block;
+			}	
+			input[type=submit],label{
+			    margin-top:10px;
+			}
+		</style>	
+	</head>
+	
+	
+	
+
+		
+	<body>     	 
+	
+	
+		<script type="text/javascript">
+			
+		
+		
+		function Resultado() {
+  var QUESTAO1 = document.getElementById("Q1").checked;
+  var QUESTAO2 = document.getElementById("Q2").checked; 
+  var QUESTAO3 = document.getElementById("Q3").checked;
+  var QUESTAO4 = document.getElementById("Q4").checked;  
+			   
+			   if ( QUESTAO1 == true){alert ('SIM1'); var A1 = 0}
+			   
+			  			   
+			   if ( QUESTAO2 == true){alert ('NÃO1'); var B1 = 1}
+			   
+			   if ( QUESTAO3 == true){alert ('SIM2'); var A2 = 0}
+			   
+			   if ( QUESTAO4 == true){alert ('NÃO2'); var B2 = 1}
+			
+			
+			   	   
+	    }
+		
+		
+		</script>
+		
+			 <form name=PREP" id="PREP" action=#" method="post">
+			 <label>1) Você tem 18 Anos ou mais?</label>
+             <input type="radio" id="Q1" name="R1"  /> SIM </label>             
+             <input type="radio" id="Q2" name="R1"  /> NÃO </label>
+             <br /> <br />
+			 <label>2)Conseguiria tomar uma paílula de remédio todos os dias?</label>
+             <input type="radio" id="Q3" name="R2"  /> SIM </label>             
+             <input type="radio" id="Q4" name="R2"  /> NÃO </label>
+             <br /> 
+			 	<input type="submit" value="Calcular" onclick="Resultado()" />
+
+          
+
+             
+			 
+		</form>
+		
+		<hr>
+		
+		
+	</body>
+</head>	
